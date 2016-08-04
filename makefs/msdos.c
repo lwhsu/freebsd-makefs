@@ -73,7 +73,7 @@ struct msdos_options_ex {
 void
 msdos_prep_opts(fsinfo_t *fsopts)
 {
-	struct msdos_options_ex *msdos_opt = ecalloc(1, sizeof(*msdos_opt));
+	struct msdos_options_ex *msdos_opt = calloc(1, sizeof(*msdos_opt));
 	const option_t msdos_options[] = {
 #define AOPT(_opt, _type, _name, _min, _desc) { 			\
 	.letter = _opt,							\
