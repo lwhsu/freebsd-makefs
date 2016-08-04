@@ -72,6 +72,7 @@ static fstype_t fstypes[] = {
 }
 	ENTRY(ffs),
 	ENTRY(cd9660),
+	ENTRY(msdos),
 	{ .type = NULL	},
 };
 
